@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -20,7 +20,7 @@
 		"compilationTarget": {
 			"library/PriceConverter.sol": "PriceConverter"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -41,11 +41,11 @@
 			]
 		},
 		"library/PriceConverter.sol": {
-			"keccak256": "0x68026dc9fc0ab063f5b18a9e67da77b7f56d66bbf90b58194cb28b04f1b1eaa9",
+			"keccak256": "0x55f5b23a88ec6a78d82dd944a22d08ee0272c6bc96337ba9d9191332438a17dd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aaa18582da908670a9b45419ac537d70f84650db2e55cdd82858b769a9dcc19d",
-				"dweb:/ipfs/QmZYWKungF19GaiM3CFnzgXQxwz2yCRQWsrTqQ9994p1Ho"
+				"bzz-raw://1859c29c9ebaac0331f0b11e59a476199331ea155b5cd8bfd236e0103e6281e7",
+				"dweb:/ipfs/QmQRniVDVvKuhtngyv5UQKFqVJpAAc4vdpiFAyhPmMj5yQ"
 			]
 		}
 	},

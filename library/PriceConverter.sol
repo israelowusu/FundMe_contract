@@ -8,7 +8,7 @@ library PriceConverter {
     function getPrice() internal view returns(uint256) {
         // Address 0x694AA1769357215DE4FAC081bf1f309aDC325306
         // ABI
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0xfEefF7c3fB57d18C5C6Cdd71e45D2D0b4F9377bF);
         (,int256 price,,,) = priceFeed.latestRoundData();
         // Price of ETH in terms of USD
         // 2000.00000000
@@ -27,6 +27,6 @@ library PriceConverter {
     }
 
     function getVersion() internal view returns (uint256) {
-        return AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
+        return AggregatorV3Interface(0xfEefF7c3fB57d18C5C6Cdd71e45D2D0b4F9377bF).version();
     }
 }

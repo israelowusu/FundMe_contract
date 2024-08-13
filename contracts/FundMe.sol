@@ -6,6 +6,7 @@
 
 pragma solidity >= 0.8.18;
 
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 import {PriceConverter} from "library/PriceConverter.sol";
 
 
@@ -32,6 +33,11 @@ contract FundMe {
 
         // Reverts undo any actions that have been done, and send the remaining gas back
 
+    }
+
+    function getVersion() public view returns (uint256) {
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0xfEefF7c3fB57d18C5C6Cdd71e45D2D0b4F9377bF);
+        return priceFeed.version();
     }
 
     function withdraw() public onlyOwner {
@@ -63,4 +69,12 @@ contract FundMe {
         _;
         // _; // This means run the rest of the code
     }
+
+    receive() external payable {
+        fund();
+     }
+
+     fallback() external payable {
+        fund();
+      }
 }
